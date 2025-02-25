@@ -102,7 +102,7 @@ public class Vehiculo {
     }
 
     public void mostrarDatos() {
-        System.out.print("Vehiculo: " + this.matricula + " " + this.marca + "/" + this.modelo);
+        System.out.print("Vehiculo: " + this.matricula + " " + this.marca + "/" + this.modelo + "ruedas" + this.ruedas);
         this.mostrarPreciosSemana();
         this.mostrarViajes();
     }
