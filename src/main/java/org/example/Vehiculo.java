@@ -8,6 +8,7 @@ public class Vehiculo {
     public String matricula;
     public String marca;
     public String modelo;
+    public int ruedas;
     //almacenar el precio diario por Km en una semana  de un coche (2, 2.3, 1.3, 3.4, 3.5, 5.6, 2,4)
 //almacenar los km recorridos cada dia durante un mes
     private ArrayList<Double> preciosDia = new ArrayList<>();
@@ -36,6 +37,9 @@ public class Vehiculo {
         System.out.print("Modelo: ");
         String modelo = this.entrada.next();
         this.setModelo(modelo);
+        System.out.print("Ruedas: ");
+        int ruedas = this.entrada.nextInt();
+        this.setRuedas(ruedas);
     }
 
     public void generarViajes() {
@@ -64,6 +68,10 @@ public class Vehiculo {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public void setRuedas(int ruedas){
+        this.ruedas=ruedas;
     }
 
     public void mostrarViajes() {
